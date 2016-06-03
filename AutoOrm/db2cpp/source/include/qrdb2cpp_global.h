@@ -1,0 +1,12 @@
+#ifndef QRDB2CPP_GLOBAL_H
+#define QRDB2CPP_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(QRDB2CPP_LIBRARY)
+#  define QRDB2CPPSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define QRDB2CPPSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // QRDB2CPP_GLOBAL_H
